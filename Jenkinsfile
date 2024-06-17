@@ -10,13 +10,13 @@ stages{
          CleanWs()  
       }
    }  
-  Stage("Checkout from SCM") {
+  stage("Checkout from SCM") {
     steps {
            git branch: 'main', credentialsID: 'github', url: 'https://github.com/rajendrayapuram/register-app'
         
           }
   } 
-  Stage("Build Application") {
+  stage("Build Application") {
       steps {
            sh "mv Clean package"
             }
