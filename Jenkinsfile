@@ -18,7 +18,7 @@ stages{
   } 
   stage("Build Application") {
       steps {
-           sh "mv Clean package"
+           sh "mvn clean package"
             }
          }
   stage("Tets Application") {
