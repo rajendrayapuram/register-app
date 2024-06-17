@@ -12,7 +12,8 @@ stages{
    }  
   Stage("Checkout from SCM") {
     steps {
-           git branch: 'main', credentialsID: 'github', url:https: '//github.com/rajendrayapuram/register-app'
+           git branch: 'main', credentialsID: 'github', url: 'https://github.com/rajendrayapuram/register-app'
+        
           }
   } 
   Stage("Build Application") {
